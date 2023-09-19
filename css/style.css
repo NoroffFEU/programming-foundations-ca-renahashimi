@@ -1,4 +1,46 @@
 body {
 	font-family: sans-serif;
 	padding: 1em 3em;
+	background-color: #fff;
 }
+
+main {
+	display: block;
+	border: 3px solid #434141;
+	padding: 30px auto;
+}
+
+header {
+	border: 5px double #000;
+	border-radius: 25px;
+    padding: 50px auto;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #fff;
+}
+
+h1, h2 {
+	display: block;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+	width: 70%;
+	text-transform: uppercase;
+	color: #434141;
+	margin: 15px auto;
+	text-align: center;
+}
+
+p {
+	
+
+}
+
+img {
+	display: block;
+	width: 60%;
+	margin: 2rem auto;
+	border-bottom: 1px solid #000;
+}
+
+
+
