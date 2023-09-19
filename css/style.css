@@ -12,7 +12,7 @@ main {
 
 header {
 	border: 5px double #000;
-	border-radius: 25px;
+	border-radius: 5px;
     padding: 50px auto;
 	margin-bottom: 30px;
 	text-align: center;
@@ -31,7 +31,7 @@ h1, h2 {
 }
 
 p {
-	
+
 
 }
 
