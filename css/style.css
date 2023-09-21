@@ -30,17 +30,37 @@ h1, h2 {
 	text-align: center;
 }
 
-p {
-
-
-}
-
 img {
 	display: block;
 	width: 60%;
+	max-width: 300px;
 	margin: 2rem auto;
-	border-bottom: 1px solid #000;
 }
+
+#btn {
+	display: block;
+	scale: 1.5;
+	margin: 30px;
+	background-color: red;
+}
+
+#text {
+	display: block;
+	width: 80px;
+	font-size: 1.5em;
+	border: 1px solid #000;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+#btn, #text {
+	text-transform: uppercase;
+	margin: 40px auto;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+
 
 
 
