@@ -16,8 +16,6 @@ const kettle = {
 console.log(kettle);
 
 
-
-
 // String
 
 const object = "Kettle";
@@ -25,8 +23,6 @@ const name = "Bosch";
 var item = object +"-"+ name;
 
 console.log(item);
-
-
 
 
 // Array & Numbers
@@ -45,8 +41,6 @@ for (var i = 0; i < 7; i++){
 }
 
 
-
-
 // Booleans
 
 var brandName = ("Bosch");
@@ -57,9 +51,6 @@ if (brandName) {
 }
     
 
-
-
-
 // Water temperture
 
 var setTemperture = 80; //Perfect water temperture
@@ -69,8 +60,6 @@ if(setTemperture === 80){
 }   else { (setTemperture !== 80)
     console.log ("Water is too cold or too hot!")
 }
-
-
 
 
 // On/Off button on my kettle
@@ -84,25 +73,11 @@ if(button === "on") {
 
 
 
-
-
 // Function
 
 console.log (kettle.model); // TWK7203
 console.log (kettle.capasity); // 1.7 liter
 
-
-
-function boilSomeWater() {
-    console.log ("Fill the kettle with water");
-    console.log ("Push the ON button");
-    console.log ("Water is boiling");
-    console.log ("Water is boiled and kettle is OFF");
-}
-
-boilSomeWater();
-
-// Function 2
 
 function LetsBoilSomeMoreWater() {
 }
@@ -117,16 +92,71 @@ function LetsBoilSomeMoreWater() {
     console.log (result);
 
 
+
+let imgText = document.getElementById("image");
+// imgText = "images/0.jpg";
+function changeText() {
+
+
+if (imgText.src.match ("/images/0.jpg")) {
+    imgText.src = "/images/1.jpeg";
+    document.getElementById("btn").innerHTML = "Here we go...";
+    document.getElementById("text").innerHTML = "Let´s boil some water";
+} else if (imgText.src.match ("/images/1.jpeg")){
+    imgText.src = "/images/2.avif"; 
+    document.getElementById("btn").innerHTML = "Water is boiled, now the next step is...";
+    document.getElementById("text").innerHTML = "Fill the can full of aromatic leaves with hot water";
+} else if (imgText.src.match ("/images/2.avif")){
+    imgText.src = "/images/3.avif";
+    document.getElementById("btn").innerHTML = "More waiting in process...";
+    document.getElementById("text").innerHTML = "Let the the sitt for 10 minutes";
+} else if (imgText.src.match ("/images/3.avif")){
+    imgText.src = "/images/4.jpeg";
+    document.getElementById("btn").innerHTML = "Now that the waiting is done..";
+    document.getElementById("text").innerHTML = "Fill the cups with tea";
+    
+} else if (imgText.src.match ("/images/4.jpeg")){
+    imgText.src = "/images/5.jpeg";
+    document.getElementById("btn").innerHTML = "Finally, a good cup of tea";
+    document.getElementById("text").innerHTML = "and Enjoy...mhhm";
+    
+}else {
+    imgText.src = "/images/0.jpg";
+}
+}
+    
+
+
+
+
+
+/*  <img src="#" alt="images">
+        <div class="container">
+        <p id="text"></p>
+        <button onclick=changeText() id="btn"></button>
+        
+        
+    console.log ("Fill the kettle with water");
+    console.log ("Push the ON button");
+    console.log ("Water is boiling");
+    console.log ("Water is boiled and kettle is OFF");
+}
+
+boilSomeWater();
+
+*/
+
+
 // Button ON
 
-
+/*
 function change(){
     document.getElementById("text").innerHTML = "ON";
     document.getElementById("btn").style.background = "rgb(0, 128, 0)";   
 }
 
 console.log (change);
-
+*/
 
 
 

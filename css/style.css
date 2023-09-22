@@ -1,61 +1,71 @@
+:root {
+   --pink: #b76995;
+   --white: #fff;
+   --font-feature-settings:  'Indie Flower', cursive;;
+}
+
 body {
 	font-family: sans-serif;
 	padding: 1em 3em;
-	background-color: #fff;
+	background-color: #000;
 }
 
 main {
 	display: block;
-	border: 3px solid #434141;
-	padding: 30px auto;
+	border-top: 3px solid #434141;
+	padding: 10px auto;
 }
 
 header {
-	border: 5px double #000;
-	border-radius: 5px;
+	border-bottom: 10px double #fff;
+	border-radius: 30px;
+	border-color: var(--pink);
     padding: 50px auto;
 	margin-bottom: 30px;
 	text-align: center;
-	color: #fff;
+	color: var(--white);
 }
 
-h1, h2 {
+h1 {
 	display: block;
-	font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: var(--font-feature-settings);
     font-weight: bolder;
-	width: 70%;
-	text-transform: uppercase;
-	color: #434141;
+	width: 90%;
+	color: var(--pink);
 	margin: 15px auto;
 	text-align: center;
 }
 
 img {
 	display: block;
-	width: 60%;
-	max-width: 300px;
+	width: 90%;
+	max-width: 350px;
 	margin: 2rem auto;
 }
 
 #btn {
 	display: block;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	scale: 1.5;
+	text-transform: uppercase;
 	margin: 30px;
-	background-color: red;
+	border: 2px dashed;
+	border-radius: 25px;
+	border-color: var(--pink);
 }
 
 #text {
 	display: block;
-	width: 80px;
+	font-family: var(--font-feature-settings);
+	color: var(--pink);
+	width: 90%;
 	font-size: 1.5em;
-	border: 1px solid #000;
 	text-align: center;
-	margin-bottom: 30px;
+	letter-spacing: 0.1em;
 }
 
 #btn, #text {
-	text-transform: uppercase;
-	margin: 40px auto;
+	margin: 20px auto;
 	padding: 10px;
 	font-weight: bolder;
 }
