@@ -113,15 +113,14 @@ if (imgText.src.match ("/images/0.jpg")) {
 } else if (imgText.src.match ("/images/3.avif")){
     imgText.src = "/images/4.jpeg";
     document.getElementById("btn").innerHTML = "Now that the waiting is done..";
-    document.getElementById("text").innerHTML = "Fill the cups with tea";
+    document.getElementById("text").innerHTML = "Fill the cups with tea";  
 } else if (imgText.src.match ("/images/4.jpeg")){
     imgText.src = "/images/5.jpeg";
     document.getElementById("btn").innerHTML = "Finally, a good cup of tea";
-    document.getElementById("text").innerHTML = "and Enjoy...mhhm"; 
-}else {
+    document.getElementById("text").innerHTML = "and Enjoy...mhhm";
+} else {
     imgText.src = "/images/0.jpg";
 }
 }
     
-
 

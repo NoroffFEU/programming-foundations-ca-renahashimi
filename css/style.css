@@ -1,77 +1,76 @@
 :root {
-	--pink: #b76995;
-	--white: #fff;
-	--font-feature-settings:  'Indie Flower', cursive;;
- }
- 
- body {
-	 font-family: sans-serif;
-	 padding: 1em 3em;
-	 background-color: #000;
- }
- 
- main {
-	 display: block;
-	 border-top: 3px solid #434141;
-	 padding: 10px auto;
- }
- 
- header {
-	 border-bottom: 10px double #fff;
-	 border-radius: 30px;
-	 border-color: var(--pink);
-	 padding: 50px auto;
-	 margin-bottom: 30px;
-	 text-align: center;
-	 color: var(--white);
- }
- 
- h1 {
-	 display: block;
-	 font-family: var(--font-feature-settings);
-	 font-weight: bolder;
-	 width: 90%;
-	 color: var(--pink);
-	 margin: 15px auto;
-	 text-align: center;
- }
- 
- img {
-	 display: block;
-	 width: 90%;
-	 max-width: 350px;
-	 margin: 2rem auto;
- }
- 
- #btn {
-	 display: block;
-	 font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	 scale: 1.5;
-	 text-transform: uppercase;
-	 margin: 30px;
-	 border: 2px dashed;
-	 border-radius: 25px;
-	 border-color: var(--pink);
- }
- 
- #text {
-	 display: block;
-	 font-family: var(--font-feature-settings);
-	 color: var(--pink);
-	 width: 90%;
-	 font-size: 1.5em;
-	 text-align: center;
-	 letter-spacing: 0.1em;
- }
- 
- #btn, #text {
-	 margin: 20px auto;
-	 padding: 10px;
-	 font-weight: bolder;
- }
- 
- 
- 
- 
- 
- 
+   --pink: #b76995;
+   --white: #fff;
+   --font-feature-settings:  'Indie Flower', cursive;;
+}
+
+body {
+	font-family: sans-serif;
+	padding: 1em 3em;
+	background-color: #000;
+}
+
+main {
+	display: block;
+	border-top: 3px solid #434141;
+	padding: 10px auto;
+}
+
+header {
+	border-bottom: 10px double #fff;
+	border-radius: 30px;
+	border-color: var(--pink);
+    padding: 50px auto;
+	margin-bottom: 30px;
+	text-align: center;
+	color: var(--white);
+}
+
+h1 {
+	display: block;
+    font-family: var(--font-feature-settings);
+    font-weight: bolder;
+	width: 90%;
+	color: var(--pink);
+	margin: 15px auto;
+	text-align: center;
+}
+
+img {
+	display: block;
+	width: 90%;
+	max-width: 350px;
+	margin: 2rem auto;
+}
+
+#btn {
+	display: block;
+	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	scale: 1.5;
+	text-transform: uppercase;
+	margin: 30px;
+	border: 2px dashed;
+	border-radius: 25px;
+	border-color: var(--pink);
+}
+
+#text {
+	display: block;
+	font-family: var(--font-feature-settings);
+	color: var(--pink);
+	width: 90%;
+	font-size: 1.5em;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+#btn, #text {
+	margin: 20px auto;
+	padding: 10px;
+	font-weight: bolder;
+}
+
+
+
+
+
