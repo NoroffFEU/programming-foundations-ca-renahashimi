@@ -97,7 +97,6 @@ let imgText = document.getElementById("image");
 // imgText = "images/0.jpg";
 function changeText() {
 
-
 if (imgText.src.match ("/images/0.jpg")) {
     imgText.src = "/images/1.jpeg";
     document.getElementById("btn").innerHTML = "Here we go...";
@@ -122,5 +121,4 @@ if (imgText.src.match ("/images/0.jpg")) {
     imgText.src = "/images/0.jpg";
 }
 }
-    
-
+console.log (changeText);

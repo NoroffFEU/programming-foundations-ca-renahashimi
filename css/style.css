@@ -13,11 +13,10 @@ body {
 main {
 	display: block;
 	border-top: 3px solid #434141;
-	padding: 10px auto;
 }
 
 header {
-	border-bottom: 10px double #fff;
+	border-bottom: 4px double #fff;
 	border-radius: 30px;
 	border-color: var(--pink);
     padding: 50px auto;
@@ -29,8 +28,9 @@ header {
 h1 {
 	display: block;
     font-family: var(--font-feature-settings);
+	font-size: 1.7em;
     font-weight: bolder;
-	width: 90%;
+	width: 95%;
 	color: var(--pink);
 	margin: 15px auto;
 	text-align: center;
@@ -39,16 +39,15 @@ h1 {
 img {
 	display: block;
 	width: 90%;
-	max-width: 350px;
+	max-width: 370px;
 	margin: 2rem auto;
 }
 
 #btn {
 	display: block;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	scale: 1.5;
+	scale: 1.2;
 	text-transform: uppercase;
-	margin: 30px;
 	border: 2px dashed;
 	border-radius: 25px;
 	border-color: var(--pink);
@@ -65,8 +64,8 @@ img {
 }
 
 #btn, #text {
-	margin: 20px auto;
-	padding: 10px;
+	margin: 30px auto 10px;
+	padding: 5px 10px;
 	font-weight: bolder;
 }
 
