@@ -113,69 +113,14 @@ if (imgText.src.match ("/images/0.jpg")) {
 } else if (imgText.src.match ("/images/3.avif")){
     imgText.src = "/images/4.jpeg";
     document.getElementById("btn").innerHTML = "Now that the waiting is done..";
-    document.getElementById("text").innerHTML = "Fill the cups with tea";
-    
+    document.getElementById("text").innerHTML = "Fill the cups with tea";  
 } else if (imgText.src.match ("/images/4.jpeg")){
     imgText.src = "/images/5.jpeg";
     document.getElementById("btn").innerHTML = "Finally, a good cup of tea";
     document.getElementById("text").innerHTML = "and Enjoy...mhhm";
-    
-}else {
+} else {
     imgText.src = "/images/0.jpg";
 }
 }
     
-
-
-
-
-
-/*  <img src="#" alt="images">
-        <div class="container">
-        <p id="text"></p>
-        <button onclick=changeText() id="btn"></button>
-        
-        
-    console.log ("Fill the kettle with water");
-    console.log ("Push the ON button");
-    console.log ("Water is boiling");
-    console.log ("Water is boiled and kettle is OFF");
-}
-
-boilSomeWater();
-
-*/
-
-
-// Button ON
-
-/*
-function change(){
-    document.getElementById("text").innerHTML = "ON";
-    document.getElementById("btn").style.background = "rgb(0, 128, 0)";   
-}
-
-console.log (change);
-*/
-
-
-
-/*else (!change) {
-    document.getElementById("text").innerHTML = "OFF";
-    document.getElementById("btn").style.background = "rgb(255, 0, 0)";
-}
-}
-
-
-/*
-    document.getElementById("text").innerHTML = "OFF";
-    document.getElementById("btn").style.background = "rgb(255, 0, 0)";
-*/
-
-
-
-
-
-
-
 
