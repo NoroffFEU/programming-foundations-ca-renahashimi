@@ -1,56 +1,99 @@
+//OBJECT; KETTLE and TEA 
+
+
+//______________________________
 // Description on kettle
 
 const kettle = {
     brand: "Bosch",
     model: "TWK7203",
     capasity: 1.7,
+    on: false,
     material: "stainless steal",
     button: ["touchcontrol", "keepwarm", "on", "off"],
     colour: ["black", "grey"],
     watt: 2200,
     weight: 1.827,
     price: 1050,
-    maxcelsius: 100,
-    setTemperture: [70, 75, 80, 85, 90, 95, 100]
+    maxCelsius: 100,
+    adjustableTemperature: true,
+    setTemperture: [70, 75, 80, 85, 90, 95, 100],
+    switch: function () {
+        kettle.on = !kettle.on
+    }
 }
 console.log(kettle);
-   
 
-// Description on tea
+
+// Description of tea
 
 const tea = {
-    name: "Ceylon",
-    type: "Black tea",
-    leaves: "Dry",
+    name: "Azercay",
+    brand: "Azersun Holding",
+    types: ["Black tea", "Green tea", "Buket", "Classic", "Herbal Tea", "Fruit Tea"],
+    typeIUse: "Buket",
+    leaves: ["Dry", "Fresh leaves", "Plant"],   
+    looseTea: true,
+    bags: false,
+    color: "Golden red",
+    weightGram: 100,
     beverage: true,
     water: true,
     hot: true,
     cold: false,
-    loosetea: true,
-    bags: false,
+    function: ["Immun system booster", "Produces antioxidant"]
 }
 console.log(tea);
 
 
+//______________________________
+// STRING
 
-// String
+// Kettle
 
+
+
+
+/*
 const object = "Kettle";
 const name = "Bosch";
 var item = object +"-"+ name;
 
 console.log(item);
+*/
 
 
-// Array & Numbers
+
+// Tea
+
+var types = "Green Tea";
+var gram = 90;
+var bags = true;
+
+if (types === "Buket" &&  gram < 100 && bags === true){
+    console.log("I love this tea");
+} else {
+    if (types != "Buket") {
+        console.log ("The type must be Buket");
+    }
+    if (types = "bags") {
+        console.log ("The tea must be loose, not in bags");
+    }  
+    console.log("I do not like this tea");
+}
+  
+
+
+//______________________________
+// ARRAY & NUMBERS
+
+// Kettle
+// List of adjustable temperatures / Available boiling points
 
 var temperture = [70, 75, 80, 85, 90, 95, 100];
 console.log (temperture);
 
-// Available boiling points / tempertures in a list
-
 for (var i = 0; i < 7; i++){
-
     // console.log([i]);
     var number = temperture[i];
 
@@ -58,7 +101,19 @@ for (var i = 0; i < 7; i++){
 }
 
 
-// Booleans
+// Tea
+// My favorite flavors / Push method
+
+var types = ["Buket", "Black tea", "Fruit Tea"];
+    console.log(types);
+types.push ("Green Tea")
+    console.log(types)
+
+
+//______________________________
+// BOOLEANS
+
+//Kettle
 
 var brandName = ("Bosch");
 if (brandName) {
@@ -66,9 +121,23 @@ if (brandName) {
 } if (!brandName) {
     console.log (false);
 }
+
+
+// Tea
+// Water / tea must be hot.
+var hot = true;
+if (hot === false){    
+    console.log ("This tea is cold");
+} else {   
+    console.log ("This tea is hot, aromatic, drinkable");
+}
+
+
     
 
-// Water temperture
+//______________________________
+// KETTLE
+// Water temperture 
 
 var setTemperture = 80; //Perfect water temperture
 
@@ -78,8 +147,7 @@ if(setTemperture === 80){
     console.log ("Water is too cold or too hot!")
 }
 
-
-// On/Off button on my kettle
+// On/Off button on the kettle
 
 var button = "off";
 if(button === "on") {
@@ -89,16 +157,19 @@ if(button === "on") {
 }
 
 
+//______________________________
+// FUNCTION
 
-// Function
+// Both Kettle and Tea
+
 console.log (kettle.brand); // Bosch
 console.log (kettle.model); // TWK7203
 console.log (kettle.capasity); // 1.7 liter
 console.log (tea.name); // Ceylon
-console.log (tea.type); // Black tea
+console.log (tea.typeIUse); // Black tea
 
 
-function LetsBoilSomeMoreWater() {
+function LetUsBoilSomeWater() {
 }
     let fill = "Fill the kettle once more with water";
     let pushButton = "and push the ON button again.";
@@ -110,7 +181,9 @@ function LetsBoilSomeMoreWater() {
     console.log (result);
 
 
-// Index.html - Lets make some tea 
+// Lets make some tea 
+// Index.html - In this JS coding, I describe how to make tea/teapot.
+
 let imgText = document.getElementById("image");
 function changeText() {
 
@@ -120,7 +193,7 @@ if (imgText.src.match ("/images/0.jpeg")) {
     document.getElementById("text").innerHTML = "Let´s boil some water in a kettle";
 } else if (imgText.src.match ("/images/1.jpeg")){
     imgText.src = "/images/2.jpeg"; 
-    document.getElementById("btn").innerHTML = "Water is boiled, now the next step is...";
+    document.getElementById("btn").innerHTML = "Water is boiled and the next step is...";
     document.getElementById("text").innerHTML = "to fill the can with aromatic leaves and then with hot water";
 } else if (imgText.src.match ("/images/2.jpeg")){
     imgText.src = "/images/3.avif";
@@ -128,7 +201,7 @@ if (imgText.src.match ("/images/0.jpeg")) {
     document.getElementById("text").innerHTML = "Let the the sitt for 10 minutes";
 } else if (imgText.src.match ("/images/3.avif")){
     imgText.src = "/images/4.jpeg";
-    document.getElementById("btn").innerHTML = "Now that the waiting is done..";
+    document.getElementById("btn").innerHTML = "Now that the waiting is done...";
     document.getElementById("text").innerHTML = "fill the cups with tea";  
 } else if (imgText.src.match ("/images/4.jpeg")){
     imgText.src = "/images/5.jpeg";
@@ -136,7 +209,7 @@ if (imgText.src.match ("/images/0.jpeg")) {
     document.getElementById("text").innerHTML = "and enjoy your tea with some sweets, like baklava...mhhm";
 } else {
     imgText.src = "/images/0.jpeg";
-    document.getElementById("btn").innerHTML = "You want more tea?";
+    document.getElementById("btn").innerHTML = "Shall we make more tea?";
     document.getElementById("text").innerHTML = "";
 }
 }
