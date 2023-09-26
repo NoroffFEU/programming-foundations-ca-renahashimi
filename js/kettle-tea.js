@@ -190,11 +190,20 @@ function changeText() {
 if (imgText.src.match ("/images/0.jpeg")) {
     imgText.src = "/images/1.jpeg";
     document.getElementById("btn").innerHTML = "Here we go...";
-    document.getElementById("text").innerHTML = "Let´s boil some water in a kettle";
+    document.getElementById("text").innerHTML = "Fill the kettle with water, push the button and let´s boil some water";    
+    document.getElementById("btn2").style.display = "block";
+    
+    const powerButton = document.querySelector("#btn2");
+    powerButton.addEventListener("click", function() {
+      powerButton.textContent = "ON";
+      powerButton.style.backgroundColor = "#46b84c";
+    });
+    
 } else if (imgText.src.match ("/images/1.jpeg")){
     imgText.src = "/images/2.jpeg"; 
     document.getElementById("btn").innerHTML = "Water is boiled and the next step is...";
     document.getElementById("text").innerHTML = "to fill the can with aromatic leaves and then with hot water";
+    document.getElementById("btn2").style.display = "none";
 } else if (imgText.src.match ("/images/2.jpeg")){
     imgText.src = "/images/3.avif";
     document.getElementById("btn").innerHTML = "More waiting in process...";
@@ -206,7 +215,7 @@ if (imgText.src.match ("/images/0.jpeg")) {
 } else if (imgText.src.match ("/images/4.jpeg")){
     imgText.src = "/images/5.jpeg";
     document.getElementById("btn").innerHTML = "Finally, a good cup of tea";
-    document.getElementById("text").innerHTML = "and enjoy your tea with some sweets, like baklava...mhhm";
+    document.getElementById("text").innerHTML = "and enjoy your tea with some sweets, such as baklava...mhhm";
 } else {
     imgText.src = "/images/0.jpeg";
     document.getElementById("btn").innerHTML = "Shall we make more tea?";
@@ -214,3 +223,5 @@ if (imgText.src.match ("/images/0.jpeg")) {
 }
 }
 console.log (changeText);
+
+

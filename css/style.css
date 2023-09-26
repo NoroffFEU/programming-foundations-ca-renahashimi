@@ -2,6 +2,8 @@
    --pink: #c27ba3;
    --white: #fff;
    --grey: #434141;
+   --red:  #b84646;
+   --greeen: #46b84c;
    --font-feature-settings:  'Indie Flower', cursive;
 }
 
@@ -30,6 +32,8 @@ h1 {
 	display: block;
     font-family: var(--font-feature-settings);
 	font-size: 1.6em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
 	width: 95%;
 	max-width: 550px;
 	color: var(--pink);
@@ -47,7 +51,7 @@ img {
 
 #btn {
 	display: block;
-	width: 100%;
+	width: 75%;
 	height: 60px;
 	font-size: 1em;
 	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -56,6 +60,17 @@ img {
 	border: 2px solid;
 	border-radius: 30px;
 	border-color: var(--pink);
+}
+
+#btn2 {
+	display: none;
+	font-size: 1.5em;
+	background-color: var(--red);
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50% 50%;
+	margin: auto;
 }
 
 #text {
