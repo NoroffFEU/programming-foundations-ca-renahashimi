@@ -6,7 +6,9 @@
 
 ---
 
-##Kettle;
+## Kettle;
+
+---
 
 - Brand: a string property of the kettle = Bosch
 - Model: a string property of the model = TWK7203
@@ -24,6 +26,25 @@
 - Switch: a function property = on/off
 
 ## Tea;
+
+---
+
+- Name: a string property of the the name of tea = Azercay
+- Brand: a string property of the of the company / brand = Azersun Holding
+- Types: a string / array property of the types of tastes = Black tea, Green tea, Buket, Classic, Herbal Tea
+- TypeIUse: a string property of the type I use = Buket
+- Leaves: a string / array property of the description of the leaves = Dry, Fresh leaves, Plant
+- LooseTea: a booleen property if the tea is loose / not in bag = true
+- Bags: a booleen property if the tea is in bags = false
+- Colour: a string property of the colour = Golden red
+- WeightGram: a number property of the weight = 100 gram
+- Beverage: a booleen property / if its a liquid/drinkable = true
+- Water: a booleen property if it is mixed with water = true
+- Hot: a booleen property if the tea is hot = true
+- Cold: a booleen property if the tea is cold = false
+- Function: a string / array / function property for what tea is good for = Immun system booster, Produces antioxidant
+
+---
 
 ## REFERENCES to IMAGES:
 

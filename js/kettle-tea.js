@@ -31,7 +31,7 @@ const tea = {
     leaves: ["Dry", "Fresh leaves", "Plant"],   
     looseTea: true,
     bags: false,
-    color: "Golden red",
+    colour: "Golden red",
     weightGram: 100,
     beverage: true,
     water: true,
@@ -111,8 +111,7 @@ if (brandName) {
 }
 
 
-// Tea
-// Water / tea must be hot.
+// Tea - Water/tea must be hot.
 var hot = true;
 if (hot === false){    
     console.log ("The tea is cold");
@@ -122,8 +121,7 @@ if (hot === false){
 
     
 //______________________________
-// KETTLE
-// Water temperture 
+// KETTLE - Is the water temperture  perfect?
 
 var setTemperture = 80; //Perfect water temperture
 
@@ -146,8 +144,7 @@ if(button === "on") {
 //______________________________
 // FUNCTION
 
-// Both Kettle and Tea 
-//"Boiling water" and adding text as a paragraph
+// Both Kettle and Tea - "Boiling water" and adding text as a paragraph
 
 console.log (kettle.brand); // Bosch
 console.log (kettle.model); // TWK7203
@@ -167,7 +164,6 @@ function LetUsBoilSomeWater() {
     console.log (result);
 
 
-// Lets make some tea 
 // Index.html - In this JS coding, I describe how to make tea/teapot - taken from "function LetUsBoilSomeWater"
 
 let indexImage = document.getElementById("image");
