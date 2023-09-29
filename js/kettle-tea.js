@@ -1,8 +1,4 @@
-//OBJECT; KETTLE and TEA 
-
-
-//______________________________
-// Description on kettle
+//Description on kettle - Object
 
 const kettle = {
     brand: "Bosch",
@@ -25,7 +21,7 @@ const kettle = {
 console.log(kettle);
 
 
-// Description of tea
+// Description of tea - Object
 
 const tea = {
     name: "Azercay",
@@ -51,17 +47,11 @@ console.log(tea);
 
 // Kettle
 
-
-
-
-/*
 const object = "Kettle";
 const name = "Bosch";
 var item = object +"-"+ name;
 
-console.log(item);
-*/
-
+console.log(item); //Kettle-Bosch
 
 
 // Tea
@@ -81,14 +71,11 @@ if (types === "Buket" &&  gram < 100 && bags === true){
     }  
     console.log("I do not like this tea");
 }
-  
-
 
 //______________________________
 // ARRAY & NUMBERS
 
-// Kettle
-// List of adjustable temperatures / Available boiling points
+// Kettle - List of adjustable temperatures / Available boiling points
 
 var temperture = [70, 75, 80, 85, 90, 95, 100];
 console.log (temperture);
@@ -98,22 +85,23 @@ for (var i = 0; i < 7; i++){
     var number = temperture[i];
 
     console.log(number);
+
 }
 
 
-// Tea
-// My favorite flavors / Push method
+// Tea - My favorite flavors / Push method
 
 var types = ["Buket", "Black tea", "Fruit Tea"];
     console.log(types);
-types.push ("Green Tea")
-    console.log(types)
+    
+    types.push ("Green Tea")
+    console.log(types);
 
 
 //______________________________
 // BOOLEANS
 
-//Kettle
+//Kettle - Brandname
 
 var brandName = ("Bosch");
 if (brandName) {
@@ -127,14 +115,12 @@ if (brandName) {
 // Water / tea must be hot.
 var hot = true;
 if (hot === false){    
-    console.log ("This tea is cold");
+    console.log ("The tea is cold");
 } else {   
-    console.log ("This tea is hot, aromatic, drinkable");
+    console.log ("The tea is hot, aromatic, drinkable");
 }
 
-
     
-
 //______________________________
 // KETTLE
 // Water temperture 
@@ -160,14 +146,14 @@ if(button === "on") {
 //______________________________
 // FUNCTION
 
-// Both Kettle and Tea
+// Both Kettle and Tea 
+//"Boiling water" and adding text as a paragraph
 
 console.log (kettle.brand); // Bosch
 console.log (kettle.model); // TWK7203
 console.log (kettle.capasity); // 1.7 liter
-console.log (tea.name); // Ceylon
-console.log (tea.typeIUse); // Black tea
-
+console.log (tea.name); // Azercay
+console.log (tea.typeIUse); // Buket
 
 function LetUsBoilSomeWater() {
 }
@@ -182,44 +168,47 @@ function LetUsBoilSomeWater() {
 
 
 // Lets make some tea 
-// Index.html - In this JS coding, I describe how to make tea/teapot.
+// Index.html - In this JS coding, I describe how to make tea/teapot - taken from "function LetUsBoilSomeWater"
 
-let imgText = document.getElementById("image");
+let indexImage = document.getElementById("image");
+let indexButton = document.getElementById("btn");
+let indexText = document.getElementById("text");
+
 function changeText() {
-
-if (imgText.src.match ("/images/0.jpeg")) {
-    imgText.src = "/images/1.jpeg";
-    document.getElementById("btn").innerHTML = "Here we go...";
-    document.getElementById("text").innerHTML = "Fill the kettle with water, push the button and let´s boil some water";    
+if (indexImage.src.match ("/images/0.jpeg")) {
+    indexImage.src = "/images/1.jpeg";
+    indexButton.innerHTML = "Here we go...";
+    indexText.innerHTML = "Fill the kettle with water, push the button and let´s boil some water";    
     document.getElementById("btn2").style.display = "block";
     
-    const powerButton = document.querySelector("#btn2");
+    let powerButton = document.querySelector("#btn2");
     powerButton.addEventListener("click", function() {
       powerButton.textContent = "ON";
       powerButton.style.backgroundColor = "#46b84c";
     });
     
-} else if (imgText.src.match ("/images/1.jpeg")){
-    imgText.src = "/images/2.jpeg"; 
-    document.getElementById("btn").innerHTML = "Water is boiled and the next step is...";
-    document.getElementById("text").innerHTML = "to fill the can with aromatic leaves and then with hot water";
+} else if (indexImage.src.match ("/images/1.jpeg")){
+    indexImage.src = "/images/2.jpeg"; 
+    indexButton.innerHTML = "Water is boiled and the next step is...";
+    indexText.innerHTML = "to fill the can with aromatic leaves and then with hot water";
     document.getElementById("btn2").style.display = "none";
-} else if (imgText.src.match ("/images/2.jpeg")){
-    imgText.src = "/images/3.avif";
-    document.getElementById("btn").innerHTML = "More waiting in process...";
-    document.getElementById("text").innerHTML = "Let the the sitt for 10 minutes";
-} else if (imgText.src.match ("/images/3.avif")){
-    imgText.src = "/images/4.jpeg";
-    document.getElementById("btn").innerHTML = "Now that the waiting is done...";
-    document.getElementById("text").innerHTML = "fill the cups with tea";  
-} else if (imgText.src.match ("/images/4.jpeg")){
-    imgText.src = "/images/5.jpeg";
-    document.getElementById("btn").innerHTML = "Finally, a good cup of tea";
-    document.getElementById("text").innerHTML = "and enjoy your tea with some sweets, such as baklava...mhhm";
+} else if (indexImage.src.match ("/images/2.jpeg")){
+    indexImage.src = "/images/3.avif";
+    indexButton.innerHTML = "More waiting in process...";
+    indexText.innerHTML = "Let the the sitt for 10 minutes";
+} else if (indexImage.src.match ("/images/3.avif")){
+    indexImage.src = "/images/4.jpeg";
+    indexButton.innerHTML = "Now that the waiting is done...";
+    indexText.innerHTML = "fill the cups with tea";  
+} else if (indexImage.src.match ("/images/4.jpeg")){
+    indexImage.src = "/images/5.jpeg";
+    indexButton.innerHTML = "Finally, a good cup of tea";
+    indexText.innerHTML = "and enjoy your tea with some sweets, such as baklava...mhhm";
 } else {
-    imgText.src = "/images/0.jpeg";
-    document.getElementById("btn").innerHTML = "Shall we make more tea?";
-    document.getElementById("text").innerHTML = "";
+    indexImage.src = "/images/0.jpeg";
+    indexButton.innerHTML = alert("Do you love tea?"); 
+    indexButton.innerHTML = "If you do, then let us make more tea";
+    indexText.innerHTML = "";
 }
 }
 console.log (changeText);

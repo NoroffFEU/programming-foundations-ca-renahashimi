@@ -9,56 +9,62 @@
 
 body {
 	font-family: sans-serif;
-	padding: 1em 3em;
+	padding: 1em;
 	background-color: #000;
-}
-
-main {
-	display: block;
-	border-top: 3px solid var(--grey);
 }
 
 header {
 	display: block;
 	width: 100%;
 	border-bottom: 1px solid var(--pink);
-    padding: 50px auto;
-	margin: 0 auto 10px;
 	text-align: center;
-	color: var(--white);
+}
+
+.teapot {
+	width: 30%;
+    max-width: 80px;
+	box-shadow: none;
+	margin: 0 auto 20px;
 }
 
 h1 {
 	display: block;
     font-family: var(--font-feature-settings);
-	font-size: 1.6em;
+	font-size: 1.3em;
 	letter-spacing: 0.1em;
 	text-transform: uppercase;
 	width: 95%;
-	max-width: 550px;
+	max-width: 400px;
 	color: var(--pink);
 	margin: 15px auto;
 	text-align: center;
 }
 
+main {
+	display: block;
+	margin-top: 10px;
+	border-top: 3px solid var(--grey);
+}
+
 img {
 	display: block;
 	width: 90%;
-	max-width: 400px;
+	max-width: 420px;
 	margin: 2rem auto;
 	box-shadow: 0px 0px 35px var(--grey);
 }
 
 #btn {
 	display: block;
+	font-family:'Courier New', Courier, monospace;
 	width: 75%;
+	max-width: 400px;
 	height: 60px;
 	font-size: 1em;
-	font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	scale: 1.2;
+	scale: 1.1;
 	text-transform: uppercase;
 	border: 2px solid;
-	border-radius: 30px;
+	border-radius: 15px;
 	border-color: var(--pink);
 }
 
@@ -77,7 +83,7 @@ img {
 	display: block;
 	font-family: var(--font-feature-settings);
 	color: var(--pink);
-	max-width: 400px;
+	max-width: 450px;
 	font-size: 1.5em;
 	text-align: center;
 	letter-spacing: 0.1em;
