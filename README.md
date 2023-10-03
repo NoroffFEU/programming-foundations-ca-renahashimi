@@ -28,7 +28,7 @@ In this assignment, I have chosen to describe two objects and their specificatio
 - Name: a string property of the the name of the tea name = Azercay
 - Brand: a string property of the of the company / brand = Azersun Holding
 - Types: a string / array property of the types of tastes = Black tea, Green tea, Buket, Classic, Herbal Tea
-- TypeIUse: a string property of the type I use = Buket
+- TypeIUse: a string property of the type of tea I use = Buket
 - Leaves: a string / array property of the description of the leaves = Dry, Fresh leaves, Plant
 - LooseTea: a booleen property if the tea is loose / not in bag = true
 - Bags: a booleen property if the tea is in bags = false

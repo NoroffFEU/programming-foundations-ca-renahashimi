@@ -73,7 +73,7 @@ if (types === "Buket" &&  gram < 100 && bags === true){
 }
 
 //______________________________
-// ARRAY & NUMBERS
+// ARRAY & NUMBERS & LOOPS
 
 // Kettle - List of adjustable temperatures / Available boiling points
 
@@ -85,7 +85,6 @@ for (var i = 0; i < 7; i++){
     var number = temperture[i];
 
     console.log(number);
-
 }
 
 
@@ -97,6 +96,10 @@ var types = ["Buket", "Black tea", "Fruit Tea"];
     types.push ("Green Tea")
     console.log(types);
 
+
+var types = ["Black tea", "Green tea", "Buket", "Classic", "Herbal Tea", "Fruit Tea"];
+var numberOfTypes = types.length;
+console.log (numberOfTypes);
 
 //______________________________
 // BOOLEANS
@@ -152,13 +155,14 @@ console.log (kettle.capasity); // 1.7 liter
 console.log (tea.name); // Azercay
 console.log (tea.typeIUse); // Buket
 
+
 function LetUsBoilSomeWater() {
 }
-    let fill = "Fill the kettle once more with water";
-    let pushButton = "and push the ON button again.";
-    let boiling = "Water is boiling fast and";
-    let boiled = "finally the water is boiled";  
-    let enjoy = "for you to enjoy a second cup of tea!";
+    let fill = "Fill the kettle with water";
+    let pushButton = "and turn the kettle by pushing the ON button.";
+    let boiling = "While the water is boiling, put a teabag in your cup.";
+    let boiled = "Finally the water is boiled and you can fill the cup with hot water.";  
+    let enjoy = "Time to enjoy your cup of tea!";
 
     result = (fill+" "+pushButton+" "+boiling+" "+boiled+" "+enjoy);
     console.log (result);
@@ -177,12 +181,13 @@ if (indexImage.src.match ("/images/0.jpeg")) {
     indexText.innerHTML = "Fill the kettle with water, push the button and let´s boil some water";    
     document.getElementById("btn2").style.display = "block";
     
+    //Turn on the kettle button
     let powerButton = document.querySelector("#btn2");
     powerButton.addEventListener("click", function() {
       powerButton.textContent = "ON";
-      powerButton.style.backgroundColor = "#46b84c";
+      powerButton.style.backgroundColor = "#46b84c";  
     });
-    
+
 } else if (indexImage.src.match ("/images/1.jpeg")){
     indexImage.src = "/images/2.jpeg"; 
     indexButton.innerHTML = "Water is boiled and the next step is...";
