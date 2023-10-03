@@ -12,20 +12,20 @@ In this assignment, I have chosen to describe two objects and their specificatio
 - Model: a string property of the model = TWK7203
 - Capasity: a number property of the liter it holds = 1.7 liter
 - On: a booleen property = false
-- Material: a string property of the = stainless steal
+- Material: a string property of the material = stainless steal
 - Button: a string / array property of the characteristics = touchcontrol, keepwarm, on, off
 - Colour: a string / array property of the colour og the kettle [black, grey]
-- Watt: a number property of the = 2200
-- Weight: a number property of the = 1.827
-- Price: a number property of the = 1050
-- MaxCelsius: a number property = 100
-- AdjustableTemperature: a booleen property / if their is temperture adjustments on the kettle = true
+- Watt: a number property of the watt/energi = 2200
+- Weight: a number property of the weight = 1.827
+- Price: a number property of the price = 1050
+- MaxCelsius: a number property of the max celsius / boiling point = 100
+- AdjustableTemperature: a booleen property of the temperture adjustments on the kettle = true
 - SetTemperture: a array property of the tempertures the kettle can be set on = [70, 75, 80, 85, 90, 95, 100]
 - Switch: a function property = on/off
 
 ## TEA
 
-- Name: a string property of the the name of tea = Azercay
+- Name: a string property of the the name of the tea name = Azercay
 - Brand: a string property of the of the company / brand = Azersun Holding
 - Types: a string / array property of the types of tastes = Black tea, Green tea, Buket, Classic, Herbal Tea
 - TypeIUse: a string property of the type I use = Buket
@@ -33,7 +33,7 @@ In this assignment, I have chosen to describe two objects and their specificatio
 - LooseTea: a booleen property if the tea is loose / not in bag = true
 - Bags: a booleen property if the tea is in bags = false
 - Colour: a string property of the colour = Golden red
-- WeightGram: a number property of the weight = 100 gram
+- WeightGram: a number property of the weight in grams = 100
 - Beverage: a booleen property / if its a liquid/drinkable = true
 - Water: a booleen property if it is mixed with water = true
 - Hot: a booleen property if the tea is hot = true
