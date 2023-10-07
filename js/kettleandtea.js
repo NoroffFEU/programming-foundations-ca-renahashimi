@@ -156,19 +156,23 @@ console.log (tea.name); // Azercay
 console.log (tea.typeIUse); // Buket
 
 
-function LetUsBoilSomeWater() {
+// Let us boil some water
+
+var fill = "Fill the kettle with water"; 
+var pushButton = "and turn the kettle by pushing the ON button.";
+var boiling = "While the water is boiling, put a teabag in your cup.";
+var boiled = "Finally the water is boiled and you can fill the cup with hot water.";  
+var enjoy = "Time to enjoy your cup of tea!";
+
+function boilingWater () {
+    var result = fill + pushButton + boiling + boiled + enjoy; 
+    console.log (result);  
 }
-    let fill = "Fill the kettle with water";
-    let pushButton = "and turn the kettle by pushing the ON button.";
-    let boiling = "While the water is boiling, put a teabag in your cup.";
-    let boiled = "Finally the water is boiled and you can fill the cup with hot water.";  
-    let enjoy = "Time to enjoy your cup of tea!";
-
-    result = (fill+" "+pushButton+" "+boiling+" "+boiled+" "+enjoy);
-    console.log (result);
+boilingWater ();
 
 
-// Index.html - In this JS coding, I describe how to make tea/teapot - taken from "function LetUsBoilSomeWater"
+
+// Index.html - In this coding I describe how to make tea/teapot - taken one step further from "function boilingWater"
 
 let indexImage = document.getElementById("image");
 let indexButton = document.getElementById("btn");
@@ -213,5 +217,4 @@ if (indexImage.src.match ("/images/0.jpeg")) {
 }
 }
 console.log (changeText);
-
 

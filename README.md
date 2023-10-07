@@ -42,7 +42,7 @@ In this assignment, I have chosen to describe two objects and their specificatio
 
 ---
 
-## REFERENCES to IMAGES
+## REFERENCES for IMAGES
 
 - https://www.freepik.com/free-photo/side-view-tea-table-with-glass-tea-figurines-teapot-table-restaurant_7727122.htm -https://www.freepik.com/free-photo/close-up-pouring-hot-water-natural-aromatic-herbs-make-tea_16656473.htm
 - https://www.freepik.com/free-photo/pakhlava-jam-with-black-tea_6979512.htm
