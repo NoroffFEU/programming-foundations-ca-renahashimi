@@ -14,7 +14,7 @@ In this assignment, I have chosen to describe two objects and their specificatio
 - On: a booleen property = false
 - Material: a string property of the material = stainless steal
 - Button: a string / array property of the characteristics = touchcontrol, keepwarm, on, off
-- Colour: a string / array property of the colour og the kettle [black, grey]
+- Colour: a string / array property of the colour og the kettle = black, grey
 - Watt: a number property of the watt/energi = 2200
 - Weight: a number property of the weight = 1.827
 - Price: a number property of the price = 1050
