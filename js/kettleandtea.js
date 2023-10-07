@@ -51,7 +51,7 @@ const object = "Kettle";
 const name = "Bosch";
 var item = object +"-"+ name;
 
-console.log(item); //Kettle-Bosch
+console.log(item); // Output: Kettle-Bosch
 
 
 // Tea
@@ -126,7 +126,7 @@ if (hot === false){
 //______________________________
 // KETTLE - Is the water temperture  perfect?
 
-var setTemperture = 80; //Perfect water temperture
+var setTemperture = 80; // Perfect water temperture
 
 if(setTemperture === 80){
     console.log ("Water is perfect")
@@ -149,11 +149,11 @@ if(button === "on") {
 
 // Both Kettle and Tea - "Boiling water" and adding text as a paragraph
 
-console.log (kettle.brand); // Bosch
-console.log (kettle.model); // TWK7203
-console.log (kettle.capasity); // 1.7 liter
-console.log (tea.name); // Azercay
-console.log (tea.typeIUse); // Buket
+console.log (kettle.brand); // Output: Bosch
+console.log (kettle.model); // Output: TWK7203
+console.log (kettle.capasity); // Output: 1.7 liter
+console.log (tea.name); // Output: Azercay
+console.log (tea.typeIUse); // Output: Buket
 
 
 // Let us boil some water
@@ -184,14 +184,14 @@ if (indexImage.src.match ("/images/0.jpeg")) {
     indexText.innerHTML = "Fill the kettle with water, push the button and let´s boil some water";    
     document.getElementById("btn2").style.display = "block";
     
-    //Turn on the kettle button
-    let powerButton = document.querySelector("#btn2");
+    // Turn on the kettle button
+    var powerButton = document.querySelector("#btn2");
     powerButton.addEventListener("click", function() {
     powerButton.textContent = "ON";
     powerButton.style.backgroundColor = "#46b84c";  
     console.log ("Kettle is on"); 
     });
-
+    
 } else if (indexImage.src.match ("/images/1.jpeg")){
     indexImage.src = "/images/2.jpeg"; 
     indexButton.innerHTML = "Water is boiled and the next step is...";
