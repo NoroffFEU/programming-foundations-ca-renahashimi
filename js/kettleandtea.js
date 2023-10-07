@@ -191,7 +191,7 @@ if (indexImage.src.match ("/images/0.jpeg")) {
     powerButton.style.backgroundColor = "#46b84c";  
     console.log ("Kettle is on"); 
     });
-    
+
 } else if (indexImage.src.match ("/images/1.jpeg")){
     indexImage.src = "/images/2.jpeg"; 
     indexButton.innerHTML = "Water is boiled and the next step is...";
