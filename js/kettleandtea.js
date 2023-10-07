@@ -14,7 +14,7 @@ const kettle = {
     maxCelsius: 100,
     adjustableTemperature: true,
     setTemperture: [70, 75, 80, 85, 90, 95, 100],
-    switch: function () {
+    switchOnOff: function () {
         kettle.on = !kettle.on
     }
 }
@@ -171,7 +171,6 @@ function boilingWater () {
 boilingWater ();
 
 
-
 // Index.html - In this coding I describe how to make tea/teapot - taken one step further from "function boilingWater"
 
 let indexImage = document.getElementById("image");
@@ -188,8 +187,9 @@ if (indexImage.src.match ("/images/0.jpeg")) {
     //Turn on the kettle button
     let powerButton = document.querySelector("#btn2");
     powerButton.addEventListener("click", function() {
-      powerButton.textContent = "ON";
-      powerButton.style.backgroundColor = "#46b84c";  
+    powerButton.textContent = "ON";
+    powerButton.style.backgroundColor = "#46b84c";  
+    console.log ("Kettle is on"); 
     });
 
 } else if (indexImage.src.match ("/images/1.jpeg")){
@@ -212,7 +212,7 @@ if (indexImage.src.match ("/images/0.jpeg")) {
 } else {
     indexImage.src = "/images/0.jpeg";
     indexButton.innerHTML = alert("Do you love tea?"); 
-    indexButton.innerHTML = "If you do, then let us make more tea";
+    indexButton.innerHTML = "If you do, then let us make more tea.";
     indexText.innerHTML = "";
 }
 }
