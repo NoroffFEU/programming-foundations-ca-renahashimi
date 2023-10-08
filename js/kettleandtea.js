@@ -173,9 +173,9 @@ boilingWater ();
 
 // Index.html - In this coding I describe how to make tea/teapot - taken one step further from "function boilingWater"
 
-let indexImage = document.getElementById("image");
-let indexButton = document.getElementById("btn");
-let indexText = document.getElementById("text");
+var indexImage = document.getElementById("image");
+var indexButton = document.getElementById("btn");
+var indexText = document.getElementById("text");
 
 function changeText() {
 if (indexImage.src.match ("/images/0.jpeg")) {
