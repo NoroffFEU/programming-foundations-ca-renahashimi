@@ -21,7 +21,7 @@ In this assignment, I have chosen to describe two objects and their specificatio
 - MaxCelsius: a number property of the max celsius / boiling point = 100
 - AdjustableTemperature: a booleen property of the temperture adjustments on the kettle = true
 - SetTemperture: a array property of the tempertures the kettle can be set on = [70, 75, 80, 85, 90, 95, 100]
-- Switch: a function property = on/off
+- switchOnOff: a function property = on/off
 
 ## TEA
 
