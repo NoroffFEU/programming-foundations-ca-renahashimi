@@ -1,4 +1,101 @@
+:root {
+   --pink: #c27ba3;
+   --white: #fff;
+   --grey: #434141;
+   --red:  #b84646;
+   --greeen: #46b84c;
+   --font-feature-settings:  'Indie Flower', cursive;
+}
+
 body {
 	font-family: sans-serif;
-	padding: 1em 3em;
+	padding: 1em;
+	background-color: #000;
 }
+
+header {
+	display: block;
+	width: 100%;
+	border-bottom: 1px solid var(--pink);
+	text-align: center;
+}
+
+.teapot {
+	width: 30%;
+    max-width: 80px;
+	box-shadow: none;
+	margin: 0 auto 20px;
+}
+
+h1 {
+	display: block;
+    font-family: var(--font-feature-settings);
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	width: 95%;
+	max-width: 400px;
+	color: var(--pink);
+	margin: 15px auto;
+	text-align: center;
+}
+
+main {
+	display: block;
+	margin-top: 10px;
+	border-top: 3px solid var(--grey);
+}
+
+img {
+	display: block;
+	width: 90%;
+	max-width: 420px;
+	margin: 2rem auto;
+	box-shadow: 0px 0px 35px var(--grey);
+}
+
+#btn {
+	display: block;
+	font-family:'Courier New', Courier, monospace;
+	width: 75%;
+	max-width: 400px;
+	height: 60px;
+	font-size: 1em;
+	scale: 1.1;
+	text-transform: uppercase;
+	border: 2px solid;
+	border-radius: 15px;
+	border-color: var(--pink);
+}
+
+#btn2 {
+	display: none;
+	font-size: 1.2em;
+	background-color: var(--red);
+	text-align: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50% 50%;
+	margin: auto;
+}
+
+#text {
+	display: block;
+	font-family: var(--font-feature-settings);
+	color: var(--pink);
+	max-width: 450px;
+	font-size: 1.5em;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+#btn, #text {
+	margin: 30px auto 10px;
+	padding: 5px 10px;
+	font-weight: bolder;
+}
+
+
+
+
+
