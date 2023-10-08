@@ -158,14 +158,14 @@ console.log (tea.typeIUse); // Output: Buket
 
 // Let us boil some water
 
-var fill = "Fill the kettle with water"; 
-var pushButton = "and turn the kettle by pushing the ON button.";
-var boiling = "While the water is boiling, put a teabag in your cup.";
-var boiled = "Finally the water is boiled and you can fill the cup with hot water.";  
-var enjoy = "Time to enjoy your cup of tea!";
-var result = fill +" "+ pushButton +" "+ boiling +" "+ boiled +" "+ enjoy; 
-
 function boilingWater () {
+    var fill = "Fill the kettle with water"; 
+    var pushButton = "and turn the kettle by pushing the ON button.";
+    var boiling = "While the water is boiling, put a teabag in your cup.";
+    var boiled = "Finally the water is boiled and you can fill the cup with hot water.";  
+    var enjoy = "Time to enjoy your cup of tea!";
+
+    var result = fill +" "+ pushButton +" "+ boiling +" "+ boiled +" "+ enjoy; 
     console.log (result);  
 }
 boilingWater ();
